@@ -1,0 +1,9 @@
+---
+- name: enable firewalld reule for http and https
+  ansible.posix.firewalld:
+    service: '{{ item }}'
+    permanent: true
+    immediate: true
+  loop:
+    - http
+    - https

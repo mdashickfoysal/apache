@@ -1,0 +1,7 @@
+---
+- name: create testing template
+  ansible.builtin.template:
+    src: index.html.j2
+    dest: /var/www/html/index.html
+  notify: restart_app
+

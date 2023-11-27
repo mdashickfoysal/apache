@@ -1,0 +1,7 @@
+---
+- name: install required packages for webserver
+  ansible.builtin.dnf:
+    name:
+      - httpd
+      - firewalld
+    state: present

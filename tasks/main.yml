@@ -1,0 +1,8 @@
+---
+# tasks file for roles/apache
+- import_tasks: 1_pkg_install.yml
+- import_tasks: 2_service_manage.yml
+- import_tasks: 3_firewall_rules.yml
+- import_tasks: 4_template_manage.yml
+
+

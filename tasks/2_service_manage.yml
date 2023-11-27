@@ -1,0 +1,9 @@
+---
+- name: enable service
+  ansible.builtin.service:
+    name: '{{ item }}'
+    enabled: true
+    state: started
+  loop:
+    - httpd
+    - firewalld
